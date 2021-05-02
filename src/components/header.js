@@ -1,16 +1,29 @@
 import * as React from "react"
 import PropTypes from "prop-types"
+import { StaticImage } from "gatsby-plugin-image"
+import { FcMenu } from "react-icons/fc"
 import { Link } from "gatsby"
 import "../pages/style.css"
 
 const Header = ({ siteTitle }) => (
   <header className="header__contain">
-    <div>
-      <h1>
-        <Link style={{ color: "#000" }} to="/">
-          {siteTitle}
-        </Link>
-      </h1>
+    <div className="header__logo">
+      <StaticImage
+        className="test"
+        src="../images/logo.png"
+        width={100}
+        quality={95}
+        formats={["AUTO", "WEBP", "AVIF"]}
+        alt="logo myboxmobile"
+        style={
+          {
+            // marginBottom: `1.45rem`,
+          }
+        }
+      />
+      <div className="menu__header">
+        <FcMenu className="menu" />
+      </div>
     </div>
     <div className="headernav_right">
       <h5>Accueil |</h5>

@@ -14,7 +14,19 @@ const FirstBlockHome = () => {
         width="100%"
         height="100%"
       /> */}
-      1
+
+      <div className="firstBlock__ssBlockOne">
+        <p>Notre concept</p>
+        <p>En 30 secondes</p>
+        <div className="linkVideo">1</div>
+      </div>
+      <div className="firstBlock__ssBlockTwo">
+        <h3>Le garde meuble qui se déplace chez vous !</h3>
+        <button>Tarifs et réservations</button>
+      </div>
+      <div className="firstBlock__ssBlockThird">
+        <p>Pourquoi notre stockage mobile est plus rapide ?</p>
+      </div>
     </div>
   )
 }
