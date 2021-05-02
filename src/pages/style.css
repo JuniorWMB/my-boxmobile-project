@@ -466,7 +466,7 @@ table {
 }
 @media screen and (min-width: 992px) and (max-width: 1880px) {
   body {
-    max-width: 1280px;
+    max-width: 1880px;
     box-sizing: border-box;
   }
   /******************************************** header *************************/
