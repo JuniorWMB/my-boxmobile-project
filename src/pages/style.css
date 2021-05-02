@@ -290,6 +290,9 @@ table {
   .fifthBlockHome__entreprise {
     height: 250px;
     border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -297,6 +300,162 @@ table {
   body {
     max-width: 768px;
     box-sizing: border-box;
+  }
+  /******************************************** header *************************/
+  header {
+    padding: 0.4rem;
+    box-shadow: 2px 6px 25px -12px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 2px 6px 25px -12px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 2px 6px 25px -12px rgba(0, 0, 0, 0.73);
+    margin-bottom: 0rem;
+    height: 20%;
+    display: flex;
+  }
+  .headernav_right {
+    display: none;
+  }
+  .header__logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .test {
+    height: 100%;
+  }
+  /* .header__contain {
+  } */
+  .menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+  }
+  .menu {
+    font-size: 2rem;
+    color: var(--text-sstitle-color);
+  }
+
+  /************** firstBlock*********************/
+
+  .firstBlockHome__contain,
+  .secondBlockHome__contain {
+    height: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .firstBlockHome__contain {
+    background-color: var(--text-title-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .firstBlockHome__contain div {
+    border: 1px solid var(--text-sstitle-color);
+    height: 300px;
+    width: 90%;
+    margin: 1rem 0;
+  }
+  .firstBlock__ssBlockOne,
+  .firstBlock__ssBlockTwo,
+  .firstBlock__ssBlockThird {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+  }
+  .firstBlock__ssBlockTwo h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .firstBlock__ssBlockTwo button {
+    background-color: var(--text-sstitle-color);
+    height: 20%;
+    width: 70%;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    /* box-shadow: 0 1px 2px rgba(216, 12, 12, 0.15); */
+  }
+
+  /******************SecondBlock*********************/
+  .secondBlockHome__contain {
+    padding: 1rem;
+  }
+  .secondBlockHome__block {
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+    /* box-shadow: 0 1px 2px var(--text-sstitle-color); */
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .secondBlockHome__block p {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  /*********************ThirdBlock***********************/
+  .thirdBlockHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--text-title-color);
+  }
+  .thirdBlockHome__oneblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .thirdBlockHome__oneblock p {
+    text-align: center;
+  }
+  .icone__block {
+    font-size: 2rem;
+  }
+
+  /******************** FourBlock********************/
+  .fourBlockHome {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fourBlockHome__paragraphe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+  .fourBlockHome__paragraphe button {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 1rem;
+    background-color: var(--text-sstitle-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  /*********************** fifthBlockHome *******************/
+  .fifthBlockHome__contain {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .fifthBlockHome__particulier,
+  .fifthBlockHome__entreprise {
+    height: 250px;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -309,6 +468,166 @@ table {
   body {
     max-width: 1280px;
     box-sizing: border-box;
+  }
+  /******************************************** header *************************/
+  header {
+    padding: 0.4rem;
+    box-shadow: 2px 6px 25px -12px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 2px 6px 25px -12px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 2px 6px 25px -12px rgba(0, 0, 0, 0.73);
+    margin-bottom: 0rem;
+    height: 20%;
+    display: flex;
+  }
+  .headernav_right {
+    display: flex;
+  }
+  .header__logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .test {
+    height: 100%;
+  }
+
+  .menu__header {
+    display: none;
+  }
+  .headernav_right {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    justify-content: flex-end;
+    width: 70%;
+  }
+  .headernav_right h5 {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
+  /************** firstBlock*********************/
+
+  .firstBlockHome__contain,
+  .secondBlockHome__contain {
+    height: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .firstBlockHome__contain {
+    background-color: var(--text-title-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+  }
+  .firstBlockHome__contain div {
+    border: 1px solid var(--text-sstitle-color);
+    border: blue 1px solid;
+    height: 300px;
+    width: 90%;
+    margin: 1rem 0;
+  }
+  .firstBlock__ssBlockOne,
+  .firstBlock__ssBlockTwo,
+  .firstBlock__ssBlockThird {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+  }
+  .firstBlock__ssBlockTwo h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .firstBlock__ssBlockTwo button {
+    background-color: var(--text-sstitle-color);
+    height: 20%;
+    width: 70%;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  /******************SecondBlock*********************/
+  .secondBlockHome__contain {
+    padding: 1rem;
+    display: flex;
+    height: 400px;
+    align-items: center;
+  }
+  .secondBlockHome__block {
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+    /* box-shadow: 0 1px 2px var(--text-sstitle-color); */
+    height: 95%;
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+  }
+  .secondBlockHome__block p {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  /*********************ThirdBlock***********************/
+  .thirdBlockHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--text-title-color);
+  }
+  .thirdBlockHome__oneblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .thirdBlockHome__oneblock p {
+    text-align: center;
+  }
+  .icone__block {
+    font-size: 2rem;
+  }
+  /******************** FourBlock********************/
+  .fourBlockHome {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fourBlockHome__paragraphe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+  .fourBlockHome__paragraphe button {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 1rem;
+    background-color: var(--text-sstitle-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  /*********************** fifthBlockHome *******************/
+  .fifthBlockHome__contain {
+    height: auto;
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .fifthBlockHome__particulier,
+  .fifthBlockHome__entreprise {
+    height: 250px;
+    width: 50%;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
