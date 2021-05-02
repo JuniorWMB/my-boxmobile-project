@@ -294,6 +294,31 @@ table {
     justify-content: center;
     align-items: center;
   }
+  /*************** NewsLetter ******************/
+  .newsletter__contain {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #8356a7;
+    margin-top: 1rem;
+  }
+  .newsletter__contain input {
+    height: 30px;
+    width: 150px;
+    margin-right: 0.3rem;
+    border: none;
+    border-radius: 3px;
+  }
+  .newsletter__contain button {
+    background-color: var(--text-sstitle-color);
+    border: none;
+    height: 30px;
+    width: 80px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -456,6 +481,31 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  /*************** NewsLetter ******************/
+  .newsletter__contain {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #8356a7;
+    margin-top: 1rem;
+  }
+  .newsletter__contain input {
+    height: 30px;
+    width: 350px;
+    margin-right: 0.3rem;
+    border: none;
+    border-radius: 3px;
+  }
+  .newsletter__contain button {
+    background-color: var(--text-sstitle-color);
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 1rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -628,6 +678,31 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  /*************** NewsLetter ******************/
+  .newsletter__contain {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #8356a7;
+    margin-top: 1rem;
+  }
+  .newsletter__contain input {
+    height: 30px;
+    width: 350px;
+    margin-right: 0.3rem;
+    border: none;
+    border-radius: 3px;
+  }
+  .newsletter__contain button {
+    background-color: var(--text-sstitle-color);
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 1rem;
   }
 }
 

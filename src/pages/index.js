@@ -9,6 +9,7 @@ import SecondBlockHome from "../components/firstBlockHome/SecondBlockHome"
 import ThirdBlockHome from "../components/firstBlockHome/ThirdBlockHome"
 import FourBlockHome from "../components/firstBlockHome/FourBlockHome"
 import FifthBlockHome from "../components/firstBlockHome/FifthBlockHome"
+import Newsletter from "../components/Newsletter"
 
 const IndexPage = () => (
   <Layout>
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <ThirdBlockHome />
     <FourBlockHome />
     <FifthBlockHome />
+    <Newsletter />
 
     {/* <StaticImage
       src="../images/gatsby-astronaut.png"
