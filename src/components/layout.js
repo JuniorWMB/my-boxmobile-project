@@ -11,6 +11,15 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import { StaticImage } from "gatsby-plugin-image"
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillYoutube,
+  AiFillTwitterSquare,
+  AiFillLinkedin,
+} from "react-icons/ai"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -37,14 +46,88 @@ const Layout = ({ children }) => {
         }
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
+        <footer>
+          <div className="mentionLegales">
+            <div className="presta">
+              <h2 style={{ marginTop: "1rem" }}>Nos prestations</h2>
+              <p>Particuliers</p>
+              <p>Professionnels</p>
+              <p>Location d'espace de stockage</p>
+              <p>Stockage déménagement</p>
+            </div>
+            <div className="mentionLegales">
+              <div className="presta">
+                <h2>Combien ça coute</h2>
+                <p>Tarif garde meuble</p>
+                <p>Garde meuble pas cher</p>
+                <p>Demander un deis</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mentionLegales">
+            <div className="presta">
+              <h2>Trouver votre centre</h2>
+              <p>Test 1</p>
+              <p>Test 2</p>
+            </div>
+            <div className="mentionLegales">
+              <div className="presta">
+                <h2> Aide & Mentions légales</h2>
+                <p>Calculateur de volume</p>
+                <p>CGV</p>
+                <p>Politique de confidentialité</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mentionLegales">
+            <div className="presta">
+              <h2>A propos de My BoxMobile</h2>
+              <p>Nous contacter</p>
+              <p>Notre équipe</p>
+              <p>Nos partenaires</p>
+            </div>
+            <div className="mentionLegales">
+              <div className="presta reseaumaster">
+                <h2> Nos reseaux</h2>
+                <AiFillFacebook className="reseau" />
+                <AiFillInstagram className="reseau" />
+                <AiFillYoutube className="reseau" />
+                <AiFillTwitterSquare className="reseau" />
+                <AiFillLinkedin className="reseau" />
+              </div>
+            </div>
+          </div>
+
+          <div className="mentionLegales mentionfinal">
+            <div className="footer__textsocial">
+              <StaticImage
+                className="test"
+                src="../images/logo.png"
+                width={200}
+                quality={95}
+                formats={["AUTO", "WEBP", "AVIF"]}
+                alt="logo myboxmobile"
+                style={
+                  {
+                    // marginBottom: `1.45rem`,
+                  }
+                }
+              />
+              <p>Siège social</p>
+              <p> 16 rue du cantal</p>
+              <p>91100 Lisses</p>
+            </div>
+            <div className="footer__horaire">
+              <p>Horaire: du Lundi au Vendredi</p>
+              <p>09h00 - 18h00</p>
+            </div>
+          </div>
+          {/*           
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="https://www.gatsbyjs.com">Gatsby</a> */}
         </footer>
       </div>
     </>
