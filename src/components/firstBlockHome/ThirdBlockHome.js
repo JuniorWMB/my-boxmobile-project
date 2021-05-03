@@ -26,8 +26,8 @@ const ThirdBlockHome = () => {
         <div className="thirdBlockHome__oneblock">
           <FcApproval className="icone__block" />
           <p>
-            Gagner en souplesse et en sérénité; le Cube est livré puis enlevé à
-            votre demande
+            Gagner en souplesse et en sérénité: votre box mobile est livré en
+            bas de chez vous
           </p>
         </div>
         <div className="thirdBlockHome__oneblock">

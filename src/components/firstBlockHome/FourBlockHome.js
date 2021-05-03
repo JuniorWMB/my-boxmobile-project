@@ -4,12 +4,12 @@ const FourBlockHome = () => {
   return (
     <div className="fourBlockHome">
       <div className="fourBlockHome__title">
-        <h2>Le cube c'est quoi ?</h2>
+        <h2>Un box c'est quoi ?</h2>
       </div>
       <div className="fourBlockHome__paragraphe">
         <p>
           Il s'agit d'une caisse garde meubles en bois équivalent à un box de
-          stockage de 4 m² soit la capacité de 2 studios
+          stockage de 2 m² (4m3) ou 4 m² (8m3)
         </p>
         <p>Il est équipé d'une porte à l'avant pour faciliter le chargement</p>
         <p>
@@ -19,22 +19,12 @@ const FourBlockHome = () => {
           Il est équipé d'aérateurs pour permettre une bonne circulation de
           l'air et assurer une parfaite conservation de vos biens
         </p>
-        <p>
-          Il est équipé d'une housse de protection totalement étanche aux
-          agressions climatiques (UV, pluie, gel, neige…)
-        </p>
-        <p>
-          Il est équipé de sangles vous permettant d'attacher votre mobilier
-        </p>
         <button>Estimer vos besoins</button>
       </div>
       <div className="fourBlockHome__picture">
         <p>
-          Nous livrons à votre adresse le nombre de Cubes dont vous avez besoin.
-          Ils vous sont livrés avec tout le matériel nécessaire à l'emballage et
-          à la protection de vos biens. Vous pourrez vous procurez des cartons
-          de déménagement, ainsi que toutes les autres fournitures d'emballage
-          dans notre boutique en ligne.
+          Nous livrons à votre adresse le nombre de box dont vous avez besoin.
+          Ils vous sont livrés sur rdv à votre domicile.
         </p>
       </div>
     </div>

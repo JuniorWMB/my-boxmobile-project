@@ -21,7 +21,7 @@ const FirstBlockHome = () => {
         <div className="linkVideo">1</div>
       </div>
       <div className="firstBlock__ssBlockTwo">
-        <h3>Le garde meuble qui se déplace chez vous !</h3>
+        <h3>Le stockage qui se déplace chez vous !</h3>
         <button>Tarifs et réservations</button>
       </div>
       <div className="firstBlock__ssBlockThird">
