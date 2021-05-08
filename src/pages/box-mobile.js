@@ -10,6 +10,7 @@ import ThirdBlockPageTwo from "../components/pageTwo/thirdBlockPageTwo"
 const SecondPage = () => (
   <Layout>
     <SEO title="le box mobile c'est quoi" />
+    <h1 className="pageTwo__title">Nos Box Mobile</h1>
     <FirstBlockPageTwo />
     <DeuceBlockPageTwo />
     <ThirdBlockPageTwo />

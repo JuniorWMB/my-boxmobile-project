@@ -27,7 +27,8 @@ const Header = ({ siteTitle }) => (
       <div className="headernav_right">
         <Link to="/">Accueil |</Link>
         <Link to="/box-mobile/"> Le box mobile c'est quoi ? |</Link>
-        <Link to="/nos-services/"> Nos services |</Link>
+        {/* <Link to="/nos-services/"> Nos services |</Link> */}
+        <Link to="/contact/"> Contact |</Link>
         <Link to="/volume/"> Calculateur de volume</Link>
         <Link
           style={{
