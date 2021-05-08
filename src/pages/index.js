@@ -13,7 +13,7 @@ import Newsletter from "../components/Newsletter"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Accueil" />
     <FirstBlockHome />
     <SecondBlockHome />
     <ThirdBlockHome />

@@ -15,18 +15,18 @@ const FirstBlockHome = () => {
         height="100%"
       /> */}
 
-      <div className="firstBlock__ssBlockOne">
+      {/* <div className="firstBlock__ssBlockOne">
         <p>Notre concept</p>
         <p>En 30 secondes</p>
         <div className="linkVideo">1</div>
-      </div>
+      </div> */}
       <div className="firstBlock__ssBlockTwo">
-        <h3>Le stockage qui se déplace chez vous !</h3>
+        <h2>Le stockage mobile en bas de chez vous </h2>
         <button>Tarifs et réservations</button>
       </div>
-      <div className="firstBlock__ssBlockThird">
+      {/* <div className="firstBlock__ssBlockThird">
         <p>Pourquoi notre stockage mobile est plus rapide ?</p>
-      </div>
+      </div> */}
     </div>
   )
 }

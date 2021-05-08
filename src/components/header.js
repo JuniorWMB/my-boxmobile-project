@@ -25,11 +25,11 @@ const Header = ({ siteTitle }) => (
         <FaBars className="menu" />
       </div>
       <div className="headernav_right">
-        <h5>Accueil |</h5>
-        <h5> La box mobile c'est quoi ? |</h5>
-        <h5> Nos services |</h5>
-        <h5> Calculateur de volume</h5>
-        <h5
+        <Link to="/">Accueil |</Link>
+        <Link to="/box-mobile/"> Le box mobile c'est quoi ? |</Link>
+        <Link to="/nos-services/"> Nos services |</Link>
+        <Link to="/volume/"> Calculateur de volume</Link>
+        <Link
           style={{
             height: "50px",
             width: "100px",
@@ -39,10 +39,12 @@ const Header = ({ siteTitle }) => (
             background: "purple",
             borderRadius: ".3rem",
             color: "#fff",
+            marginLeft: ".5rem",
+            cursor: "pointer",
           }}
         >
           Devis
-        </h5>
+        </Link>
       </div>
     </div>
   </header>
