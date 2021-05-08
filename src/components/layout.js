@@ -94,11 +94,13 @@ const Layout = ({ children }) => {
               <div className="mentionLegales">
                 <div className="presta reseaumaster">
                   <h2 style={{ marginTop: "1rem" }}> Nos reseaux</h2>
-                  <AiFillFacebook className="reseau" />
-                  <AiFillInstagram className="reseau" />
-                  <AiFillYoutube className="reseau" />
-                  <AiFillTwitterSquare className="reseau" />
-                  <AiFillLinkedin className="reseau" />
+                  <div>
+                    <AiFillFacebook className="reseau" />
+                    <AiFillInstagram className="reseau" />
+                    <AiFillYoutube className="reseau" />
+                    <AiFillTwitterSquare className="reseau" />
+                    <AiFillLinkedin className="reseau" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -121,10 +123,10 @@ const Layout = ({ children }) => {
                 <p>Siège social</p>
                 <p> 17 allée Fernand Léger</p>
                 <p>91270 Vigneux-sur-Seine</p>
-              </div>
-              <div className="footer__horaire">
-                <a href="Contact@myboxmobile.fr ">Contact@myboxmobile.fr</a>
-                <p>0783062424 / 0677837697</p>
+                <div className="footer__horaire">
+                  <a href="Contact@myboxmobile.fr ">Contact@myboxmobile.fr</a>
+                  <p>0783062424 / 0677837697</p>
+                </div>
               </div>
             </div>
             {/*           
