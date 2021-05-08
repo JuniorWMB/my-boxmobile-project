@@ -1,5 +1,6 @@
-import React, { useState } from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import React, { useState, useEffect } from "react"
+// import { StaticImage } from "gatsby-plugin-image"
+// import { FaBox } from "react-icons/fa"
 
 import aspirateur from "../../images/1-7_Buanderie/1-Aspirateur.svg"
 import bancDeRangement from "../../images/1-7_Buanderie/2-banc de rangement.svg"
@@ -774,10 +775,24 @@ const VolumeCalcul = () => {
   const [toggleTabs, setToggleTabs] = useState(1)
   const [products, setProducts] = useState([])
   const [disable, setDisable] = useState(false)
+  const [box, setBox] = useState()
+  const [count, setCount] = useState("test 0")
 
   const toggleTab = index => {
     setToggleTabs(index)
   }
+  let total = 0
+  for (let i = 0; i < products.length; i++) {
+    total = total + Number(products[i].volume) * products[i].quantity
+  }
+
+  //   if (total <= 2) {
+  //     setBox(<FaBox className="icon__volume" />)
+  //     setCount("test 1")
+  //   } else if (total => 2 || total <= 4) {
+  //     setBox(2 * <FaBox className="icon__volume" />)
+  //     setCount("test 2")
+  //   }
 
   return (
     <div>
@@ -843,7 +858,6 @@ const VolumeCalcul = () => {
           Salon
         </div>
       </div>
-
       <div className="contenu__onglets">
         <div
           className={toggleTabs === 1 ? "contenu active-contenu" : "contenu"}
@@ -915,7 +929,6 @@ const VolumeCalcul = () => {
           </div>
         </div>
       </div>
-
       <div className="contenu__onglets">
         <div
           className={toggleTabs === 2 ? "contenu active-contenu" : "contenu"}
@@ -1200,7 +1213,6 @@ const VolumeCalcul = () => {
           </div>
         </div>
       </div>
-
       <div className="contenu__onglets">
         <div
           className={toggleTabs === 6 ? "contenu active-contenu" : "contenu"}
@@ -1273,7 +1285,6 @@ const VolumeCalcul = () => {
           </div>
         </div>
       </div>
-
       <div className="contenu__onglets">
         <div
           className={toggleTabs === 7 ? "contenu active-contenu" : "contenu"}
@@ -1346,7 +1357,6 @@ const VolumeCalcul = () => {
           </div>
         </div>
       </div>
-
       <div className="contenu__onglets">
         <div
           className={toggleTabs === 8 ? "contenu active-contenu" : "contenu"}
@@ -1421,7 +1431,6 @@ const VolumeCalcul = () => {
           </div>
         </div>
       </div>
-
       <div className="contenu__onglets">
         <div
           className={toggleTabs === 9 ? "contenu active-contenu" : "contenu"}
@@ -1482,7 +1491,6 @@ const VolumeCalcul = () => {
           </div>
         </div>
       </div>
-
       <div className="contenu__onglets">
         <div
           className={toggleTabs === 10 ? "contenu active-contenu" : "contenu"}
@@ -1553,6 +1561,15 @@ const VolumeCalcul = () => {
               )
             })}
           </div>
+        </div>
+      </div>
+      <div className="infoBox">
+        <p>Besoin surface estimé</p>
+        <p>{total.toFixed(2)} m3</p>
+        <div className="trait__volume"></div>
+        <div className="volumeTotalBas">
+          Soit <p>{count}</p> Box
+          {box}
         </div>
       </div>
     </div>
