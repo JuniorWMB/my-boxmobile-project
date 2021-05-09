@@ -7,6 +7,8 @@ const volume = () => {
   return (
     <Layout>
       <SEO title="Calculateur de volume" />
+      <h1 className="pageTwo__title">VOLUME</h1>
+
       <VolumeCalcul />
     </Layout>
   )

@@ -795,7 +795,7 @@ const VolumeCalcul = () => {
   //   }
 
   return (
-    <div>
+    <div className="container">
       <div className="bloc__onglets">
         <div
           className={toggleTabs === 1 ? "tabs active-tabs" : "tabs"}
@@ -901,7 +901,7 @@ const VolumeCalcul = () => {
                     setProducts(newProduct)
                   }}
                   style={{
-                    border: "1px solid #94c935",
+                    border: "1px solid #6a1b9a",
                     display: "flex",
                     flexDirection: "column",
                     height: "225px",
@@ -972,7 +972,7 @@ const VolumeCalcul = () => {
                     setProducts(newProduct)
                   }}
                   style={{
-                    border: "1px solid #94c935",
+                    border: "1px solid #6a1b9a",
                     display: "flex",
                     flexDirection: "column",
                     height: "225px",
@@ -1043,7 +1043,7 @@ const VolumeCalcul = () => {
                     setProducts(newProduct)
                   }}
                   style={{
-                    border: "1px solid #94c935",
+                    border: "1px solid #6a1b9a",
                     display: "flex",
                     flexDirection: "column",
                     height: "225px",
@@ -1114,7 +1114,7 @@ const VolumeCalcul = () => {
                     setProducts(newProduct)
                   }}
                   style={{
-                    border: "1px solid #94c935",
+                    border: "1px solid #6a1b9a",
                     display: "flex",
                     flexDirection: "column",
                     height: "225px",
@@ -1185,7 +1185,7 @@ const VolumeCalcul = () => {
                     setProducts(newProduct)
                   }}
                   style={{
-                    border: "1px solid #94c935",
+                    border: "1px solid #6a1b9a",
                     display: "flex",
                     flexDirection: "column",
                     height: "225px",
@@ -1257,7 +1257,7 @@ const VolumeCalcul = () => {
                     setProducts(newProduct)
                   }}
                   style={{
-                    border: "1px solid #94c935",
+                    border: "1px solid #6a1b9a",
                     display: "flex",
                     flexDirection: "column",
                     height: "225px",
@@ -1329,7 +1329,7 @@ const VolumeCalcul = () => {
                     setProducts(newProduct)
                   }}
                   style={{
-                    border: "1px solid #94c935",
+                    border: "1px solid #6a1b9a",
                     display: "flex",
                     flexDirection: "column",
                     height: "225px",
@@ -1401,7 +1401,7 @@ const VolumeCalcul = () => {
                     setProducts(newProduct)
                   }}
                   style={{
-                    border: "1px solid #94c935",
+                    border: "1px solid #6a1b9a",
                     display: "flex",
                     flexDirection: "column",
                     height: "225px",
@@ -1475,7 +1475,7 @@ const VolumeCalcul = () => {
                     setProducts(newProduct)
                   }}
                   style={{
-                    border: "1px solid #94c935",
+                    border: "1px solid #6a1b9a",
                     display: "flex",
                     flexDirection: "column",
                     height: "225px",
@@ -1535,7 +1535,7 @@ const VolumeCalcul = () => {
                     setProducts(newProduct)
                   }}
                   style={{
-                    border: "1px solid #94c935",
+                    border: "1px solid #6a1b9a",
                     display: "flex",
                     flexDirection: "column",
                     height: "225px",
