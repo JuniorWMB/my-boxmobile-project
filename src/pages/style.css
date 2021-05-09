@@ -1267,7 +1267,9 @@ table {
   .hvr-underline-from-left:active:before {
     right: 0;
   }
-  .showMenu {
+  .showMenu,
+  .svgcontain,
+  .hiddenmenu {
     display: none;
   }
   .headernav_right {
